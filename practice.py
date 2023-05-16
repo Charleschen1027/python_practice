@@ -16,7 +16,16 @@
 # p = func(20)
 # print(p)
 #定义带参数的函数
-def sayHello(someone):
-    print(someone,'says Hello!')
+# def sayHello(someone):
+#     print(someone,'says Hello!')
+#
+# sayHello('Charles')
 
-sayHello('Charles')
+
+# 函数的返回值1
+def double(a):
+    return a * 2
+
+x = 3
+y = double(x)
+print(y)
