@@ -68,10 +68,33 @@
 # printAll(3,2,1)
 
 # 不指定参数数量，参数存储在字典中
-def printAll(**kargs):
-    for k in kargs:
-        print(k, ':', kargs[k])
+# def printAll(**kargs):
+#     for k in kargs:
+#         print(k, ':', kargs[k])
+#
+#
+# printAll(a=1, b=2, c=3)
+# printAll(x=4, y=5)
 
+#操作列表
+# # 创建一个列表 lst，其中的元素依次是 1，2，3
+# lst = [1, 2, 3]
+#
+# # 输出 lst 中的第一个元素 1
+# print(lst[0])
+#
+# #将 lst 的第二个元素 2 改为 4
+# lst[1] = 4
+#
+# # 在 lst 末尾再增加一个元素 5
+# lst.append(5)
+#
+# print(lst)
 
-printAll(a=1, b=2, c=3)
-printAll(x=4, y=5)
+# #列表切片
+# lst = [365, 'everyday', 0.618, True, 2, 5]
+#
+# # 取出 lst 的第二个位置至倒数第二个位置的子列表
+# # 赋值给新的列表 lst2
+# lst2 = lst[1:-1]
+# print(lst2)
