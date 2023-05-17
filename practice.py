@@ -1,5 +1,6 @@
 # import random
 # print(random.choice([1,3,5]))
+from typing import List
 
 #函数的定义和调用
 # def sayHello():
@@ -98,3 +99,85 @@
 # # 赋值给新的列表 lst2
 # lst2 = lst[1:-1]
 # print(lst2)
+
+# 字符串分割为列表
+# a = 'i love python'
+# l = a.split()
+# print(l)
+
+# split()带参数
+# a = 'www.crossincode.com'
+# l = a.split('.')
+# print(l)
+
+# list方法将字符串转换成列表
+# a = 'crossin'
+# l = list(a)
+# print(l)
+#
+# b = ' '.join(l)
+# print(b)
+
+# 输出1-100中可以同时被2,3,5整除的整数
+# 用;连接输出
+# result: list[str] = []
+# for i in range(1,100):
+#     if i % 2 == 0 and i % 3 == 0 and i % 5 == 0:
+#         result.append(str(i))
+#
+# print(';'.join(result))
+
+# lst1 = [1, 2, 3, 5, 8, 13, 22]
+#
+# # 将lst1中的每一项都乘以2，生成新的列表lst2
+# # 建议用列表解析式实现
+# lst2 = [i*2 for i in lst1]
+# print(lst2)
+#
+# word = 'I am Mr Crossin of Python'
+#
+# # 将字符串 word 按照空格分割成一个列表
+# lst = word.split(' ')
+#
+# # 再将分割后的列表 lst 以逗号(,)为连接字符重新拼接成字符串 word2
+# word2 = ','.join(lst)
+#
+# print(word2)
+
+# 创建一个字典，包含 one、two、three 三个键
+# 对应的值分别为 1，2，3
+# data = {
+#     'one':1,
+#     'two':2,
+#     'three':3
+# }
+#
+# # 将 two 键对应的值改为 4
+# data['two'] = 4
+#
+# print(data)
+
+# get_after 函数的输入参数是一个整数
+# 返回值是这个数后面递增1的两个整数（如参数10，返回 11, 12）
+# 提示：使用元组作为函数的返回值
+# def get_after(n):
+#     return n+1,n+2
+#
+# # 调用 get_after
+# after = get_after(10)
+#
+# # 输出 after 的第二项值
+# # 参考输出：12
+# print(after[1])
+
+# 有一个全部由字符串组成的列表 list_s，统计列表中每个单词出现的次数。
+list_s = ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'is', 'better', 'than', 'implicit']
+
+dic_s = {}
+for s in list_s:
+    if s not in dic_s:
+        dic_s[s] = 1
+    else:
+        dic_s[s] += 1
+
+print(dic_s)
