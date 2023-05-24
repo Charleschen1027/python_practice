@@ -171,13 +171,41 @@ from typing import List
 # print(after[1])
 
 # 有一个全部由字符串组成的列表 list_s，统计列表中每个单词出现的次数。
-list_s = ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'is', 'better', 'than', 'implicit']
+# list_s = ['Beautiful', 'is', 'better', 'than', 'ugly', 'Explicit', 'is', 'better', 'than', 'implicit']
+#
+# dic_s = {}
+# for s in list_s:
+#     if s not in dic_s:
+#         dic_s[s] = 1
+#     else:
+#         dic_s[s] += 1
+#
+# print(dic_s)
 
-dic_s = {}
-for s in list_s:
-    if s not in dic_s:
-        dic_s[s] = 1
-    else:
-        dic_s[s] += 1
+# 生成优惠券号码
+# 很多付费应用的开发者，会设计一些优惠券来吸引用户来使用新开发的应用，以达到一定的广告效应。
+#
+# 现在，请你帮他们设计并生成200个优惠券号码：
+#
+# 优惠码的字符由26个英文字符（大小写）组成
+# 每个优惠码有8位
+import random
+import string
+# 生成小写字母
+# s_num = [chr(x) for x in range(97,123)]
+#
+# #生成大写字母
+# b_num = [chr(x) for x in range(65,91)]
+#
+# #合并列表
+# coupon_num = s_num + b_num
+# #生成优惠券
+# for i in range(200):
+#     coupon = [random.choice(coupon_num) for x in range(8)]
+#     c = ''.join(coupon)
+#     print(c)
 
-print(dic_s)
+# for i in range(200):
+#     a = list(string.ascii_letters)
+#     random.shuffle(a)
+#     print(''.join(a[:8]))
