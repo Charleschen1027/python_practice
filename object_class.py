@@ -45,30 +45,55 @@
 # car2.drive(200.0)
 
 # 继承
-class Vehicle:
-    def __init__(self, speed):
-        self.speed = speed
+# class Vehicle:
+#     def __init__(self, speed):
+#         self.speed = speed
+#
+#     def drive(self, distance):
+#         print('花费 %f 小时' % (distance / self.speed))
+#
+#
+# class Bike(Vehicle):
+#     pass
+#
+#
+# class Car(Vehicle):
+#     def __init__(self, speed, fuel):
+#         Vehicle.__init__(self, speed)
+#         self.fuel = fuel
+#
+#     def drive(self, distance):
+#         Vehicle.drive(self, distance)
+#         print('消耗 %f 升油' % (distance * self.fuel))
+#
+#
+# b = Bike(15.0)
+# # b.speed = 15.0
+# c = Car(80.0, 0.012)
+# b.drive(100.0)
+# c.drive(100.0)
 
-    def drive(self, distance):
-        print('花费 %f 小时' % (distance / self.speed))
+# 继承练习
+class Pen:
+    name = 'Pen'
+
+    def write(self):
+        print('I have a', self.name)
 
 
-class Bike(Vehicle):
-    pass
+# 创建两个 Pen 子类，并修改各自的 name
+# 一个叫 ApplePen
+class ApplePen(Pen):
+    name = 'ApplePen'
 
 
-class Car(Vehicle):
-    def __init__(self, speed, fuel):
-        Vehicle.__init__(self, speed)
-        self.fuel = fuel
-
-    def drive(self, distance):
-        Vehicle.drive(self, distance)
-        print('消耗 %f 升油' % (distance * self.fuel))
+# 一个叫 PineapplePen
+class PineapplePen(Pen):
+    name = 'PineapplePen'
 
 
-b = Bike(15.0)
-# b.speed = 15.0
-c = Car(80.0, 0.012)
-b.drive(100.0)
-c.drive(100.0)
+# 分别创建这两个子类的对象
+ap = ApplePen()
+pp = PineapplePen()
+ap.write()
+pp.write()
